@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Natavvea Biography</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        body {
+            overflow-y: scroll;
+        }
+        .gallery-container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+
+        .image-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image-grid img:hover {
+            transform: scale(1.05);
+        }
+
+        .about-container {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .about-container h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .about-container p {
+            font-size: 1rem;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .contact-container {
+            text-align: center;
+            margin: 40px 20px;
+        }
+
+        .contact-container h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .contact-container p {
+            font-size: 1rem;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        
+        #about, #contact, #gallery {
+            margin: 0;
+            padding: 0;
+        }
+
+        
+        #about {
+            padding-bottom: 20px;
+        }
+
+        #contact {
+            padding-top: 0;
+            padding-bottom: 20px;
+        }
+
+        #gallery {
+            padding-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Natavvea Asyeeda</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <a href="#home">Home</a>
+                </div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <a href="#about">About</a>
+                </div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                    <a href="#contact">Contact Me</a>
+                </div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                    <a href="#gallery">Gallery</a>
+                </div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact Me</a>
+                <a href="#gallery">Gallery</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    <section id="home">
+        <div class="main-container">
+            <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+                <img src="prof.png" alt="">
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hey I'm <span>VeeVee</span></h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">I'm a <span></span></div>
+                <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">I'm a student of Universiti Teknologi Mara, UiTM Cawangan Sarawak, Session 22/23. Occasionally I like to dance as a way to de-stress. I also love vlogging because I always find myself taking videos of the beautiful people and nature around me.</p>
+                <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                    <a href="https://youtube.com/@natavveaasyeeda6030?si=xD3-VzY-C8izrTxq"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.facebook.com/share/1KiF22YtDp/?mibextid=wwXIfr"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/natavvea?igsh=MXFwemV4NWU3eGV0NA=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://x.com/nasyeeda?s=11"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                    <a href="Resume.pdf" download>
+                        <button>Download CV</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-container">
+            <h2>About Me</h2>
+            <p>I was born on February 22, 2004.</p>
+            <p>I currently reside at Green Road, Jalan Kepanyang, Kuching, Sarawak.</p>
+            <p>I attended St. Mary's School for both middle and high school.</p>
+            <img src="schoolpic.jpg">
+            <p>Presently, I am pursuing a Diploma in Tourism Management (HM110) at UiTM Sarawak Branch</p>
+            <p>I love doing photography and videography</p>
+            <img src="uitm.jpg">
+            <p>-------------------------------------------------------------------------------------</p>
+        </div>
+        
+    <section id="contact">    
+        <div>
+        <text-align> 
+            <center>
+                <h2>Contact Me</h2>
+                <p>Email: veevee126@gmail.com</p>
+                <p>Phone No: 013-321 9320</p>
+                <p>Address: No.69, Lorong Kepanyang 3, Jalan Green, Kuching, Sarawak.</p>
+            </center>
+        </text-align>   
+        </div>
+        <div class="gallery-container">
+            <h2>Gallery</h2>
+            <div class="image-grid">
+                <img src="pic1.jpg" alt="Image 1">
+                <img src="pic2.jpg" alt="Image 2">
+                <img src="pic3.jpg" alt="Image 3">
+                <img src="pic6.jpg" alt="Image 4">
+                <img src="pic5.jpg" alt="Image 5">
+                <img src="pic9.jpg" alt="Image 6">
+                <img src="pic7.jpg" alt="Image 7">
+                <img src="pic8.jpg" alt="Image 8">
+                <img src="pic4.jpg" alt="Image 9">
+                <img src="pic10.jpg" alt="Image 10">
+            </div>
+            <h2>My Favourite Video</h2>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/2BTTIJuORog?si=HSR-IgKbiXFM_rN_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({offset: 0});
+
+        function hamburg() {
+            const navbar = document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(0px)";
+        }
+
+        function cancel() {
+            const navbar = document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(-500px)";
+        }
+    </script>
+</body>
+</html>
